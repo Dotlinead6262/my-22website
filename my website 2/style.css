@@ -1,0 +1,34 @@
+css
+body {
+    background-image: url('images/background.jpg'); /* रिलेटिव पाथ */
+    background-size: cover; /* पूरी स्क्रीन कवर करे */
+    background-position: center; /* सेंटर में सेट करे */
+    background-attachment: fixed; /* स्क्रॉल करने पर इमेज मूव न हो */
+    background-repeat: no-repeat; /* रिपीट न हो */
+    color: white; /* टेक्स्ट व्हाइट रहे ताकि दिखे */
+    font-family: Arial, sans-serif;
+    height: 100vh; /* पूरी स्क्रीन की हाइट ले */
+    margin: 0; /* डिफ़ॉल्ट मार्जिन हटाएँ */
+    display: flex; /* कंटेनर को सेंटर करने के लिए */
+    justify-content: center; /* हॉरिजॉन्टली सेंटर */
+    align-items: center; /* वर्टिकली सेंटर */
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* हल्का पारदर्शी सफेद बैकग्राउंड */
+    padding: 20px; /* अंदर की स्पेसिंग */
+    border-radius: 10px; /* कोनों को गोल करें */
+    text-align: center; /* टेक्स्ट को सेंटर करें */
+}
+
+h1 {
+    color: #00cc00; /* "You are welcome!" के लिए हरा रंग */
+}
+
+h2 {
+    color: #333; /* हिंदी टेक्स्ट के लिए गहरा रंग */
+}
+
+video {
+    width: 100%;
+    max-width: 500px; /* वीडियो का साइज़ सेट करें */
+}

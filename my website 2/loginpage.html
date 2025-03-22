@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>लॉगिन पेज</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/background.jpg'); /* बैकग्राउंड इमेज */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 50px;
+        }
+        .login-box {
+            background: rgba(255, 255, 255, 0.9); /* हल्का पारदर्शी सफेद */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-box h2 {
+            margin-bottom: 20px;
+        }
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-box button:hover {
+            background: #2980b9;
+        }
+        .forgot-password {
+            margin-top: 10px;
+            display: block;
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>लॉगिन</h2>
+        <input type="text" id="username" placeholder="यूज़रनेम" required>
+        <input type="password" id="password" placeholder="पासवर्ड" required>
+        <button onclick="checkLogin()">लॉगिन</button>
+        <a href="#" class="forgot-password">पासवर्ड भूल गए?</a>
+    </div>
+
+    <script>
+        function checkLogin() {
+            var correctUsername = "user123";
+            var correctPassword = "pass123";
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === correctUsername && password === correctPassword) {
+                window.location.href = "welcome.html";
+            } else {
+                alert("गलत यूज़रनेम या पासवर्ड!");
+            }
+        }
+    </script>
+</body>
+</html>
